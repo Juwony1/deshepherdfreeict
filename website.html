@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Bootcamp</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right, #4CAF50, #2E7D32);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2E7D32;
+            padding: 0.75rem 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #66BB6A;
+        }
+
+        section {
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #2E7D32;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to right, #4CAF50, #66BB6A);
+            color: white;
+            padding: 0.75rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(to right, #66BB6A, #81C784);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        ul li {
+            background: #E8F5E9;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 5px;
+            border-left: 5px solid #4CAF50;
+        }
+
+        footer {
+            background-color: #2E7D32;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        form button:hover {
+            background-color: #45A049;
+        }
+
+        .home-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 2rem auto;
+        }
+
+        .to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .to-top:hover {
+            background-color: #66BB6A;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the ICT Bootcamp</h1>
+        <p>Empowering our community with digital skills</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#register">Register</a>
+        <a href="#certificate">Certificate</a>
+        <a href="#advert">Advert</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>2025 Free ICT Bootcamp</h2>
+        <img src="ICT%20BOOTCAMP.jpg" alt="ICT Bootcamp 2025" class="home-image">
+        <p><a href="https://tinyurl.com/DESHEPHERD2024ICT" class="btn">Register Now</a></p>
+    </section>
+
+    <section id="about">
+        <h2>About the Bootcamp</h2>
+        <p>Join us for an intensive two-day training on Microsoft Office Packages and Graphical Applications.</p>
+        <p>Date: 21st February 2025 (9:00 AM) and 22nd February 2025 (3:00 PM)</p>
+        <p>Venue: Church of Pentecost, Anglican Communion, Oke-Alafia, Amoyo, Kwara State.</p>
+    </section>
+
+    <section id="schedule">
+        <h2>Schedule</h2>
+        <ul>
+            <li><strong>Day 1 (21st February):</strong> Microsoft Office Packages</li>
+            <li><strong>Day 2 (22nd February):</strong> Graphical Applications</li>
+        </ul>
+    </section>
+
+    <section id="register">
+        <h2>Register Now</h2>
+        <form action="submit_registration.php" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="expectation">Expectations for the Training</label>
+            <textarea id="expectation" name="expectation" rows="3" required></textarea>
+
+            <label for="suggestions">Suggestions</label>
+            <textarea id="suggestions" name="suggestions" rows="3"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="certificate">
+        <h2>Download Your Certificate</h2>
+        <form action="generate_certificate.php" method="POST">
+            <label for="participant-name">Enter Your Name</label>
+            <input type="text" id="participant-name" name="participant-name" required>
+            <button type="submit">Download Certificate</button>
+        </form>
+    </section>
+
+    <section id="advert">
+        <h2>Advert Placement</h2>
+        <p>Advertise your business or service here! Contact us for more details.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: deshepherdconcept@gmail.com</p>
+        <p>Phone: +23247044507667</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 DeShepherd Concept. All Rights Reserved.</p>
+    </footer>
+
+    <a href="#top" class="to-top">Back to Top</a>
+</body>
+</html>
